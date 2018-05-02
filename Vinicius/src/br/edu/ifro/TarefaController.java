@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.edu.ifro;
 
 import java.net.URL;
@@ -10,21 +5,49 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
-/**
- *
- * @author Vinícius
- */
 public class TarefaController implements Initializable {
     
     @FXML
-    private Label label;
+    private TextField txt1, txt2, txtResult;
     
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    private Button btnAdicao, btnSubtracao, btnMultiplicacao, btnDivisao;
+    
+    @FXML
+    private Label lbln1, lbln2, lblResult;
+    
+    @FXML
+    private void Adicao(ActionEvent event) {
+        Double N1 = Double.parseDouble(txt1.getText());
+        Double N2 = Double.parseDouble(txt2.getText());
+        Double resultado= N1 + N2;
+        txtResult.setText(resultado.toString());
+    }
+    @FXML
+    private void Subtracao(ActionEvent event) {
+        Double N1 = Double.parseDouble(txt1.getText());
+        Double N2 = Double.parseDouble(txt2.getText());
+        Double resultado= N1 - N2;
+        txtResult.setText(resultado.toString());
+    }
+    
+    @FXML
+    private void Multiplicacao(ActionEvent event) {
+        Double N1 = Double.parseDouble(txt1.getText());
+        Double N2 = Double.parseDouble(txt2.getText());
+        Double resultado= N1 * N2;
+        txtResult.setText(resultado.toString());
+    }
+    @FXML
+    private void Divisao(ActionEvent event) {
+        Double N1 = Double.parseDouble(txt1.getText());
+        Double N2 = Double.parseDouble(txt2.getText());
+        Double resultado= N1 / N2;
+        txtResult.setText(resultado.toString());
     }
     
     @Override
