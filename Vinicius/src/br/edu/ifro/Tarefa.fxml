@@ -11,16 +11,26 @@
     <children>
       <Pane layoutX="15.0" layoutY="14.0" prefHeight="243.0" prefWidth="418.0" style="-fx-background-color: yellow;">
          <children>
-            <Button fx:id="btnAdicao" layoutX="270.0" layoutY="21.0" mnemonicParsing="false" onAction="#Adicao" prefHeight="50.0" prefWidth="117.0" text="Adição" />
-            <TextField fx:id="txtResult" layoutX="34.0" layoutY="173.0" prefHeight="25.0" prefWidth="177.0" />
-            <Button fx:id="btnSubtracao" layoutX="270.0" layoutY="71.0" mnemonicParsing="false" onAction="#Subtracao" prefHeight="50.0" prefWidth="117.0" text="Subtração" />
-            <Button fx:id="btnMultiplicacao" layoutX="270.0" layoutY="122.0" mnemonicParsing="false" onAction="#Multiplicacao" prefHeight="50.0" prefWidth="117.0" text="Multiplicação" />
-            <Button fx:id="btnDivisao" layoutX="270.0" layoutY="173.0" mnemonicParsing="false" onAction="#Divisao" prefHeight="50.0" prefWidth="117.0" text="Divisão" />
-            <TextField fx:id="txt1" layoutX="34.0" layoutY="46.0" prefHeight="25.0" prefWidth="177.0" />
-            <TextField fx:id="txt2" layoutX="34.0" layoutY="110.0" prefHeight="25.0" prefWidth="177.0" />
-            <Label fx:id="lbln1" layoutX="34.0" layoutY="29.0" text="Número 1:" />
-            <Label fx:id="lbln2" layoutX="34.0" layoutY="94.0" text="Número 2:" />
-            <Label fx:id="lblresult" layoutX="34.0" layoutY="155.0" text="Resultado:" />
+            <Button fx:id="btnAdicao" layoutX="273.0" layoutY="37.0" mnemonicParsing="false" onAction="#Adicao" prefHeight="50.0" prefWidth="117.0" text="Adição" />
+            <TextField fx:id="txtResult" layoutX="33.0" layoutY="200.0" prefHeight="25.0" prefWidth="177.0" />
+            <Button fx:id="btnSubtracao" layoutX="273.0" layoutY="87.0" mnemonicParsing="false" onAction="#Subtracao" prefHeight="50.0" prefWidth="117.0" text="Subtração" />
+            <Button fx:id="btnMultiplicacao" layoutX="273.0" layoutY="138.0" mnemonicParsing="false" onAction="#Multiplicacao" prefHeight="50.0" prefWidth="117.0" text="Multiplicação" />
+            <Button fx:id="btnDivisao" layoutX="273.0" layoutY="189.0" mnemonicParsing="false" onAction="#Divisao" prefHeight="50.0" prefWidth="117.0" text="Divisão" />
+            <TextField fx:id="txt1" layoutX="33.0" layoutY="73.0" prefHeight="25.0" prefWidth="177.0" />
+            <TextField fx:id="txt2" layoutX="33.0" layoutY="137.0" prefHeight="25.0" prefWidth="177.0" />
+            <Label fx:id="lbln1" layoutX="33.0" layoutY="56.0" text="Número 1:" />
+            <Label fx:id="lbln2" layoutX="33.0" layoutY="121.0" text="Número 2:" />
+            <Label fx:id="lblresult" layoutX="33.0" layoutY="182.0" text="Resultado:" />
+            <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="418.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Cadastro">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAluno" text="Alunos" />
+                        <MenuItem mnemonicParsing="false" onAction="#fecharProjeto" text="Fechar" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
          </children>
       </Pane>
     </children>
